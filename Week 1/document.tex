@@ -1,0 +1,81 @@
+\author{Samuel Gido}
+\title{Week 1 Discrete}
+\date{Spring 2024}
+
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage{fullpage}
+\usepackage{setspace}
+\onehalfspacing
+
+\begin{document} 
+\maketitle
+
+\section*{Language of Sets}
+
+Let \(S\) and \(T\) be sets, these are basic set operations.
+\begin{center}
+  \( \vert S \vert\) = \#\( S\) = \# of elements in S \\
+  \(S \cup T\) = \(S\) union \(T\) = \{x: x \(\in\) S or x \(\in\) T\} \\
+  \(S \cap T\) = \(S\) intersection \(T\) = \{x: x \(\in\) S and x \(\in\) T\} \\
+  \(\emptyset \) = empty set = \{ \} \\
+  \(S \backslash T\) = \(S\) minus \(T\) = \{x: x \(\in\) S and x \(\notin\) T\} \\
+  \(S \sqcup T\) = \(S\) symmetric difference \(T\) = \{x: x \(\in\) S or x \(\in\) T but not both\} (similar to xor) \\
+  \(S \subset T\) = \(S\) is a subset of \(T\) = \{x: x \(\in\) S implies x \(\in\) T\} \\
+  \(\bar{S}\) = \(S^{\subset}\) = complement of \(S\) = \{x: x \(\notin\) S\} \\
+\end{center}
+
+\subsection*{Partitioning a Set}
+\indent Let \(S\) be a set. Partitioning \(S\) would create a collection \(S_1, S_2,...,S_m\) such that each subset of \(S\) is exactly one element of \(S\). Each subset is called a \textit{part}.
+
+\begin{center}
+  \(S = S_1 \cup S_2 \cup ... \cup S_m \) \\
+  \(S_i \cap S_j = \emptyset, \,\,\, (i \neq j)\)
+\end{center}
+
+\pagebreak
+\section*{Addition Principle}
+\begin{center}
+  \(\vert S \vert = \vert S_1 \vert + \vert S_2 \vert + ... + \vert S_m \vert\) \\
+\end{center}
+
+From the principle that a whole is equal to the sum of its parts. This only applies if the whole set is correctly partitioned, or the parts don't overlap. \\
+
+\textbf{Example:} A bag has 5 red marbles, 3 blue marbles, and 2 green marbles. How many ways can you pick a marble from the bag? \\
+\begin{center}
+  \(\vert S \vert = \vert S_1 \vert + \vert S_2 \vert + \vert S_3 \vert = 5 + 3 + 2 = 10\) ways to pick a marble from the bag\\
+\end{center}
+
+\section*{Multiplication Principle}
+\begin{center}
+  Let \(S\) = \{(\(a, b\)) : \(\vert a \vert = p, \vert b \vert = q\)\} \\
+  Then \(\vert S \vert = pq\)
+\end{center}
+This principle is a consequence of the addition principle. Let \(a_1, a_2,...,a_p\) be the partition of \(a\). Next, partition \(S\) into parts \(S_1, S_2,..., S_p\) where \(S_i\) is the set of ordered pairs in \(S\) with \(a_i\) as the first element (\(i = 1, 2,..., p\)). For each element in \(a\), there are \(q\) possible options to make a pair with that element in a. \\
+
+\textbf{Example:} If there are 6 men, 4 women, 3 boys, and 2 girls, how many ways can you get one of each? \\
+\begin{center}
+  \(\vert S \vert = \vert S_1 \vert \cdot \vert S_2 \vert \cdot \vert S_3 \vert \cdot \vert S_4 \vert = 6 \cdot 4 \cdot 3 \cdot 2 = 144\) ways to get one of each.
+\end{center}
+
+\textbf{Example:} \(N = 2^9 \cdot 5^7 \cdot 7^3\), what is the number of positive numbers that are factors of \(N\)?
+
+\begin{center}
+  Consider \(m\) such that \(m \vert N\), \\
+  For any factor, \(m = 2^a \cdot 5^b \cdot 7^c \), \\
+  \((0 \leq a \leq 9), (0 \leq b \leq 7), (0 \leq c \leq 3)\), \\
+  This means there are 10 options for \(a\), 8 options for \(b\), and 4 options for \(c\). \\
+  Therefore, \(10 \cdot 8 \cdot 4 = 320\) positive integer factors of \(N\).
+\end{center}
+
+\pagebreak
+\section*{Subtraction Principle}
+\begin{center}
+  Let \(A\) be a set and let \(U\) be a set larger than and containing \(A\).
+  \(\bar{A} = U \backslash A = \{x \in U : x \notin A\}\) = the complement of \(A\) in \(U\). \\
+  Therefore,\\
+   \(\vert A \vert = \vert U \vert - \vert \bar{A} \vert\).
+\end{center}
+This principle only makes sense when working with objects in \(U\) and \(\bar{A}\) is easier than working with objects in \(A\). 
+
+\end{document}
