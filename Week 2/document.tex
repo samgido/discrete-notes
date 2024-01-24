@@ -15,10 +15,14 @@
 \section*{Combinations of Sets}
 
 Let \(S\) be a set of \(n\) elements, A \textit{combination} of set \(S\) is an unordered selection 
-of \(r\) elements in \(S\). The result is a subset, \(A\), of \(S\). An \(r\)-subset or \(r\)-combination
-of \(S\) is denoted by \(\binom{n}{r}\). \\ 
+of \(r\) elements in \(S\). The result is a subset, \(A\), of \(S\). The number of \(r\)-subset or \(r\)-combination
+of \(S\) with \(n\) elements is denoted by \(\binom{n}{r}\) and the formula is: 
 
-\noindent For example, if \(S = \{a, b, c, d\}\), the four 3-subsets of \(S\) are: 
+\begin{center}
+  \(\binom{n}{r} = \frac{n!}{r!(n-r)!}\)
+\end{center}
+
+\noindent For example, if \(S = \{a, b, c, d\}\), there are 3-subsets of \(S\): 
 
 \begin{center}
   \(
@@ -34,5 +38,25 @@ of \(S\) is denoted by \(\binom{n}{r}\). \\
   And, \\
   \( \binom{n}{0} = 1,\, \binom{n}{1}=n,\, \binom{n}{n} = 1\)
 \end{center}
+
+\subsection*{Properties of Combinations}
+
+\begin{center}
+  \( \binom{n-1}{k} + \binom{n-1}{k-1} = \binom{n}{k} \)
+\end{center}
+
+\pagebreak
+\section*{Combinations of Mulit-Sets}
+Multisets are sets that hold multiple copies of the same element. For example, 
+the multiset \(\{a, a, b, c, c, c\}\), also written as \(\{2a, b ,3c\}\) \\
+
+\noindent \(r\)-permutations of a multiset \(S\) is an ordered arrangment of \(r\) elements of \(S\). 
+While there are many formulas for the amount of permutations of a multiset, one existst that gives 
+the number of full permutations of \(S\): 
+
+\begin{center}
+  \(\frac{n!}{n_1! \cdot n_2! \cdot \dots \cdot n_k! }\)
+\end{center}
+
 
 \end{document}
