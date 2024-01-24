@@ -1,0 +1,38 @@
+\author{Samuel Gido}
+\title{Week 2 Discrete}
+\date{Spring 2024}
+
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{setspace}
+\onehalfspacing
+
+\begin{document} 
+\maketitle
+
+\section*{Combinations of Sets}
+
+Let \(S\) be a set of \(n\) elements, A \textit{combination} of set \(S\) is an unordered selection 
+of \(r\) elements in \(S\). The result is a subset, \(A\), of \(S\). An \(r\)-subset or \(r\)-combination
+of \(S\) is denoted by \(\binom{n}{r}\). \\ 
+
+\noindent For example, if \(S = \{a, b, c, d\}\), the four 3-subsets of \(S\) are: 
+
+\begin{center}
+  \(
+    \{a, b, c\}, \{a, b, d\}, \{a, c, d\}, \{b, c, d\}
+  \)
+\end{center}
+
+\noindent Obvious rules for combinations:
+
+\begin{center}
+  \( \binom{n}{r} = 0 \) if \(r > n\), \\
+  \( \binom{0}{r} = 0 \) if \(r > 0\) \\
+  And, \\
+  \( \binom{n}{0} = 1,\, \binom{n}{1}=n,\, \binom{n}{n} = 1\)
+\end{center}
+
+\end{document}
