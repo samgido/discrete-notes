@@ -63,19 +63,65 @@ This principle is a consequence of the addition principle. Let \(a_1, a_2,...,a_
 \begin{center}
   Consider \(m\) such that \(m \vert N\), \\
   For any factor, \(m = 2^a \cdot 5^b \cdot 7^c \), \\
-  \((0 \leq a \leq 9), (0 \leq b \leq 7), (0 \leq c \leq 3)\), \\
+  Where \(
+    a = \{ 0 \dots 9 \}, \,b =\{0 \dots 7\}, \,c = \{0 \dots 3\}
+  \) \\
   This means there are 10 options for \(a\), 8 options for \(b\), and 4 options for \(c\). \\
-  Therefore, \(10 \cdot 8 \cdot 4 = 320\) positive integer factors of \(N\).
+  Therefore, \(10 \cdot 8 \cdot 4 = 320\) positive integer factors of \(N\) exist.
 \end{center}
 
 \pagebreak
 \section*{Subtraction Principle}
 \begin{center}
   Let \(A\) be a set and let \(U\) be a set larger than and containing \(A\).
-  \(\bar{A} = U \backslash A = \{x \in U : x \notin A\}\) = the complement of \(A\) in \(U\). \\
+  \(\bar{A} = U / A = \{x \in U : x \notin A\}\) = the complement of \(A\) in \(U\). \\
   Therefore,\\
    \(\vert A \vert = \vert U \vert - \vert \bar{A} \vert\).
 \end{center}
-This principle only makes sense when working with objects in \(U\) and \(\bar{A}\) is easier than working with objects in \(A\). 
+This principle only makes sense when working with objects in \(U\) and \(\bar{A}\) is easier than working with objects in \(A\). \\ 
+
+\textbf{Example:} A computer password consists of 6 symbols from A = {0,..,9} and B = {a,...,z}. How many passwords have a repeated symbol? \\
+
+\noindent Applying the subtraction principle, let \(U\) be the set of all possible passwords, and \(A\) be the set of all passwords with repeated symbols. \\
+
+\begin{center}
+  Then \(|A| = |U| - |\bar{A}|\), \\
+  There are 36 total symbols, so \(|U| = 36!\), \\
+  To find \(|\bar{A}|\), or the number of passwords with no repeated symbols, \\
+  The first symbol has 36 possibilities, the second has 35, and so on. So \(|\bar{A}| = \frac{36!}{30!}\), \\
+  Therefore, \(|A| = 36! - \frac{36!}{30!}\) \\
+\end{center}
+
+\pagebreak
+\section*{Permutations of Sets}
+Let \(r\) be a positive integer. An \(r\)-permutation of a set \(S\) of \(n\) elements, we get an ordered arrangement of \(r\) of the \(n\) elements. For example, if \(S\) = \{a, b, c\}, then 
+
+\begin{center}
+  The three 1-permutations of S are: \\
+  \begin{tabular}{c c c}
+    a & b & c \\
+  \end{tabular}
+
+  The six 2-permutations of S are: \\
+  \begin{tabular}{c c c c c c}
+    ab & ac & bc & ba & ca & cb \\
+  \end{tabular}
+
+  The six 3-permutations of S are: \\
+  \begin{tabular}{c c c c c c}
+    abc & acb & bac & bca & cab & cba \\
+  \end{tabular}
+\end{center} 
+
+\noindent The number of \(r\)-permutation of an \(n\)-element set is denoted by \(P(n, r)\).
+
+\subsection*{Theorem 1}
+
+For positive integers \(r\) and \(n\) where \(r \leq n\),
+\begin{center}
+  \(P(n, r) = n * (n-1) *(n-2) * \dots * (n-r+1) = \frac{n!}{(n-r)!}\) \\
+\end{center}
+
+\noindent This is used to find the number of ways to arrange \(r\) objects from a set of \(n\) objects without repetition. \\
 
 \end{document}
