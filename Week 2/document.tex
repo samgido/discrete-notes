@@ -30,6 +30,8 @@ of \(S\) with \(n\) elements is denoted by \(\binom{n}{r}\) and the formula is:
   \)
 \end{center}
 
+\noindent Combinations are different from permuations because when finding combinations, the results are sets, and the order of a elements in a set do not matter. This is why \(\{a, b, c\}\) exists but \(\{b, a, c\}\) doesn't. \\
+
 \noindent Obvious rules for combinations:
 
 \begin{center}
@@ -46,17 +48,76 @@ of \(S\) with \(n\) elements is denoted by \(\binom{n}{r}\) and the formula is:
 \end{center}
 
 \pagebreak
-\section*{Combinations of Mulit-Sets}
+
+
+\section*{Multi-Sets}
 Multisets are sets that hold multiple copies of the same element. For example, 
-the multiset \(\{a, a, b, c, c, c\}\), also written as \(\{2a, b ,3c\}\) \\
+the multiset \(\{a, a, b, c, c, c\}\), also written as \(\{2a, b ,3c\}\). The 
+'coefficients' attached to each element is sometimes called a repetition number. 
 
-\noindent \(r\)-permutations of a multiset \(S\) is an ordered arrangment of \(r\) elements of \(S\). 
-While there are many formulas for the amount of permutations of a multiset, one existst that gives 
-the number of full permutations of \(S\): 
+\section*{Permuations of Multi-Sets}
 
-\begin{center}
-  \(\frac{n!}{n_1! \cdot n_2! \cdot \dots \cdot n_k! }\)
-\end{center}
+\noindent 
+An \(r\)-permutations of a multiset \(S\) is an ordered arrangment of \(r\) elements of \(S\). 
+There are 2 major theorems for finding the number of permuations of a multiset,
+one gives the number of permuations when the repetition numbers of \textit{all} elements are infinite, 
+and the other gives the number of permuations when the repetition numbers of all elements are finite. \\
 
+\noindent
+\textbf{Theorem} Let \(S\) be a multiset with \(k\) types of objects, where each object has an infinite repetition number.
+The number of \(r\)-permuations of \(S\) is \(k^r\). \\
+
+\noindent 
+\textbf{Theorem} Let \(S\) be a multiset with \(k\) different types of objects, each with finite repetition numbers,
+\(n_1,n_2,\dots, n_k\) respectively. Let the size of \(S\) be \(n = n_1 + n_2 + \dots + n_k\).
+The number of permuations of \(S\) equals 
+
+\[
+  \frac{n!}{n_1! n_2! \dots n_k!}
+\]
+
+From this theorem, another interpretation occurs when partitioning a set of objects into parts of 
+prescribed size and where the parts have labels to them. This is best shown with an example. \\ 
+
+\noindent
+\textbf{Example} Consider a set of four objects \(\{a, b, c, d\}\) that needs to be partitioned into two sets each of size 2.
+If each part is not labeled, then there are 3 different ways of partitioning. 
+
+\[
+  \{a, b\}, \{c, d\}; \{a, c\}, \{b, d\}; \{a, d\}, \{b, c\};
+\]
+
+Now suppose that each part is labeled, maybe where each part is a box and the label is the color of the box. In this case,
+The number of permutations is now 6. This can be generalized into the following theorem.
+
+\noindent 
+\textbf{Theorem} Let \(n\) be a positive integer and let \(n_1, n_2, \dots n_k\) be positive integers with
+\(n = n_1 + n_2 + \dots + n_k \). The number of ways to partition a set of \(n\) objects into \(k\) \textit{labeled} boxes 
+where box 1 contains \(n_1\) objects, box 2 contains \(n_2\) objects, \(\dots\) box \(k\) contains \(n_k\) objects equals. 
+
+\[
+  \frac{n!}{n_1! n_2! \dots n_k!}
+\]
+
+If the boxes are not labeled and \(n_1 = n_2 = \dots = n_k \), then the number of partitions equals
+
+\[
+  \frac{n!}{k! n_1! n_2! \dots n_k!}
+\]
+
+\section*{Combinations of Multisets}
+
+If \(S\) is a multiset, then an \(r\)-combination of \(S\) is an unordered selection of \(r\) of the objects of \(S\).
+Thus, an \(r\)-combination of \(S\) is itself a multiset, or for short, an \(r\)-submultiset. If \(S\)
+has \(n\) objects, then there is only one \(n\)-combination of \(S\), namely \(S\) itself. Similarly to permuations of multisets, 
+we first count the number of \(r\)-combinations of a multiset whose repetition numbers are all infinte. \\
+
+\noindent
+\textbf{Theorem} Let \(S\) be a multiset with objects of \(k\) types, each with an infinite repetition number.
+Then the number of \(r\)-combinations of \(S\) equals 
+
+\[
+  \Big( \frac{r + k - 1}{r} \Big) = \Big( \frac{r + k - 1}{k - 1} \Big) = \frac{(r + k - 1)!}{r! (k - 1)!}
+\]
 
 \end{document}

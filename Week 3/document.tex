@@ -1,0 +1,37 @@
+\author{Samuel Gido}
+\title{Week 3 Discrete Math Notes}
+\date{Spring 2024}
+
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{setspace}
+\onehalfspacing
+
+\begin{document} 
+\maketitle
+
+\section*{Pigeonhole Principle}
+
+\subsection*{Simple Form}
+
+If \(n+ 1\) objects are distributed into \(n\) boxes, then at least one box contains two or more of the objects. 
+
+\subsection*{Stronger Form}
+
+Let \(q_1,q_2, \dots, q_n\) be positive integers. If
+  \begin{center}
+    \((q_1 + q_2+ \dots + q_n) - n + 1\)
+  \end{center}
+Objects are distributed into \(n\) boxes, then either the first box contains at least \(q_1\) objects, or the second box contains at least \(q_2\) boxes, \dots, or the \(n\)th box contains at least \(q_n\) objects. \indent
+
+\noindent There is special case, where \(q_1, q_2, \dots, q_n\) are all equal to come integer \(r\), this is called the corollary and it is where the simple form is derived from. \\
+
+\noindent \textbf{Corollary}:
+
+\begin{center}
+  Let \(n\) and \(r\) be positive integers. If \(n(r-1) + 1\) objects are distributed into \(n\) boxes, then at least one of the boxes contains \(r\) or more objects. 
+\end{center}
+
+\end{document}
