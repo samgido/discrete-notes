@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1705686286 "c:/Users/samue/Documents/GitHub/discrete-notes/Week 1/document.tex" "document.pdf" "document" 1705686288 0
-  "c:/Users/samue/Documents/GitHub/discrete-notes/Week 1/document.tex" 1705686285 5528 8cd1476384012d6fa00c4cffbdcbc731 ""
+["pdflatex"] 1707930641 "c:/Users/samue/Documents/GitHub/discrete-notes/Week 1/document.tex" "document.pdf" "document" 1707930642 0
+  "c:/Users/samue/Documents/GitHub/discrete-notes/Week 1/document.tex" 1707930639 5367 6f895ada084df27ce5374195f8e27a91 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1700540211 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1700538921 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1700538921 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -33,8 +33,8 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1700544346 4734881 9df31af74c23cb5b6845d6b52ecc54e5 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1700544392 8213412 99e32d1dab490d4799ad49560998c6ac ""
   "c:/texlive/2023/texmf.cnf" 1700544329 713 e69b156964470283e0530f5060668171 ""
-  "document.aux" 1705686288 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
-  "document.tex" 1705686285 5528 8cd1476384012d6fa00c4cffbdcbc731 ""
+  "document.aux" 1707930642 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "document.tex" 1707930639 5367 6f895ada084df27ce5374195f8e27a91 ""
   (generated)
   "document.aux"
   "document.log"
